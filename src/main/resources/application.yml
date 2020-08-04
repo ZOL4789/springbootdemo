@@ -1,0 +1,15 @@
+spring:
+  mvc:
+    #视图解析
+    view:
+      #前缀
+      prefix: /
+      #后缀
+      suffix: .jsp
+  profiles:
+    active: dev #指定那个环境
+mybatis:
+  #mybatis映射文件所在位置
+  mapper-locations: classpath:com/example/demo/mapper/*.xml
+  #需要别名的实体类的位置
+  type-aliases-package: com.example.demo.entity

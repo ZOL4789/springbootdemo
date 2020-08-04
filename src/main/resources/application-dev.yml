@@ -1,0 +1,19 @@
+#开发环境
+server:
+  #访问端口号
+  port: 8087
+  #项目访问地址，加起来就是localhost：8087/demo
+  servlet:
+    context-path: /demo
+spring:
+  datasource:
+    #数据源类
+    type: com.alibaba.druid.pool.DruidDataSource
+    #数据库驱动名
+    driver-class-name: com.mysql.jdbc.Driver
+    #数据库访问url
+    url: jdbc:mysql://localhost:3306/mydb?useUnicode=true&characterEncoding=UTF-8
+    #数据库用户名
+    username: root
+    #数据库用户对应的密码
+    password: 123456
